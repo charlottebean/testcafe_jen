@@ -7,7 +7,7 @@ const loginPage = new LoginPage();
 const iconsOnPages = new IconsOnPages();
 
 export const loggedFreeUser = Role(
-  process.env.LOGGIN_URL,
+  https://tintup.com/login,
   async t => {
     await t
       .typeText(loginPage.userEmail, process.env.USER_EMAIL)
