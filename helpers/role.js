@@ -6,9 +6,7 @@ require('dotenv').config();
 const loginPage = new LoginPage();
 const iconsOnPages = new IconsOnPages();
 
-export const loggedFreeUser = Role(
-  https://tintup.com/login,
-  async t => {
+export const loggedFreeUser = Role('http://example.com/login', async t => {
     await t
       .typeText(loginPage.userEmail, process.env.USER_EMAIL)
       .typeText(loginPage.userPassword, process.env.USER_PASSWORD)
