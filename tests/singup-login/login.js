@@ -32,14 +32,6 @@ test('Should loggin to the tint using linkedin account', async t => {
     .eql('tester3-filestack')
     .click(iconOnPages.logOutIcon);
 });
-test('Should loggin to the tint using hootsuite account', async t => {
-  await t
-
-    .useRole(loggedHootsuiteUser)
-    .expect(userAccount.userName.innerText)
-    .eql('karolagrochowina')
-    .click(iconOnPages.logOutIcon);
-});
 
 fixture`Negative login`.page`https://api.tintup.com/credentials/sign_in`;
 
